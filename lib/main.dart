@@ -1,7 +1,10 @@
+import 'package:admob_flutter/admob_flutter.dart';
 import 'package:cooking_app/sign_in.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Admob.initialize();
   runApp(CookingApp());
 }
 
